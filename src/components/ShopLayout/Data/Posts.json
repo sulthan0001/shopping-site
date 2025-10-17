@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "How Can I Use Ceramic When I Decorate?",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark1.png",
+    "category": "Decor",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis."
+  },
+  {
+    "id": 2,
+    "title": "The Secrets to a Living Room Set",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark2.png",
+    "category": "Furniture",
+    "excerpt": "Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus."
+  },
+  {
+    "id": 3,
+    "title": "How to Style a Beautiful House",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark3.png",
+    "category": "Decor",
+    "excerpt": "Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi."
+  },
+  {
+    "id": 4,
+    "title": "Chocolate Clementine Cake Recipe",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark4.png",
+    "category": "Kitchen",
+    "excerpt": "Vulputate aliquam nisi ex gravida neque tempus lorem ipsum dolor."
+  },
+  {
+    "id": 5,
+    "title": "Holiday Food Traditions With Moon Family",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark5.png",
+    "category": "Food",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis."
+  },
+  {
+    "id": 6,
+    "title": "How Can I Use Ceramic When I Decorate?",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark6.png",
+    "category": "Decor",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis."
+  },
+  {
+    "id": 7,
+    "title": "The Secrets to a Living Room Set",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark3.png",
+    "category": "Furniture",
+    "excerpt": "Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus."
+  },
+  {
+    "id": 8,
+    "title": "How to Style a Beautiful House",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark6.png",
+    "excerpt": "Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi."
+  },
+  {
+    "id": 9,
+    "title": "Chocolate Clementine Cake Recipe",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark1.png",
+    "category": "Kitchen",
+    "excerpt": "Vulputate aliquam nisi ex gravida neque tempus lorem ipsum dolor."
+  },
+  {
+    "id": 10,
+    "title": "Holiday Food Traditions With Moon Family",
+    "author": "Blake Clark",
+    "date": "July 04, 2024",
+    "image": "../../src/assets/brainclark5.png",
+    "category": "Food",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis."
+  }
+]

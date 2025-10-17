@@ -1,8 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { Search, User, Heart, ShoppingBag } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const navLinks = ["Home", "Shop", "About", "Contact"];
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Shop", path: "/shop" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
   const searchRef = useRef(null);
@@ -34,18 +40,19 @@ const Navbar = () => {
         {/* Center Navigation */}
         <ul className="hidden md:flex items-center gap-4 space-x-10">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href="#"
-                onClick={() => setActiveLink(link)}
-                className={`text-sm font-medium transition-colors ${
-                  activeLink === link
-                    ? "text-black border-b-2 border-indigo-600 pb-1 px-2"
-                    : "text-gray-700 hover:text-gray-900"
-                }`}
+            <li key={link.name}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  `text-sm font-medium transition-colors ${
+                    isActive
+                      ? "text-black border-b-2 border-indigo-600 pb-1 px-2"
+                      : "text-gray-700 hover:text-gray-900"
+                  }`
+                }
               >
-                {link}
-              </a>
+                {link.name}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -96,13 +103,19 @@ const Navbar = () => {
       <div className="md:hidden flex justify-center border-t border-gray-100 py-3">
         <ul className="flex space-x-6">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-gray-900 text-sm font-medium"
+            <li key={link.name}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  `text-sm font-medium ${
+                    isActive
+                      ? "text-indigo-600 border-b-2 border-indigo-600 pb-1"
+                      : "text-gray-700 hover:text-gray-900"
+                  }`
+                }
               >
-                {link}
-              </a>
+                {link.name}
+              </NavLink>
             </li>
           ))}
         </ul>

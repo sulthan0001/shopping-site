@@ -70,9 +70,19 @@ const Cards = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit
             phasellus mollis sit aliquam sit nullam neque ultrices.
           </p>
-          <button className="mx-auto relative text-sm font-semibold tracking-wide pb-0.5 text-gray-800 hover:text-gray-600 transition">
-            SHOP NOW
-            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-800"></span>
+          <button
+            className="mx-auto relative text-sm font-semibold tracking-wide pb-0.5
+            text-gray-800 bg-transparent px-3 py-1
+            transition-all duration-300 ease-in-out
+            border border-transparent rounded-md
+            hover:bg-blue-500 hover:text-white hover:shadow-md hover:scale-105
+            group"
+          >
+            Shop Now
+            <span
+              className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-800
+              transition-opacity duration-300 group-hover:opacity-0"
+            ></span>
           </button>
         </div>
 

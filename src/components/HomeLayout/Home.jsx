@@ -1,34 +1,3 @@
-// import React from "react";
-// import image from "../../assets/homepageImage.png";
-
-// const Home = () => {
-//   return (
-//     <div className="relative w-full">
-//       {/* Background Image */}
-//       <img
-//         src={image}
-//         alt="Bat Trang Dinner Set"
-//         className="w-full h-[90vh] object-cover"
-//       />
-
-//       {/* Overlay Section */}
-//       <div className="absolute inset-0 flex items-center justify-center">
-//         <div className="bg-[#8d7b6f]/80 text-white text-center p-10 rounded-md max-w-lg">
-//           <div className="text-4xl font-semibold mb-4 tracking-wide">
-//             BAT TRANG DINNER SET
-//           </div>
-//           <p className="text-sm mb-6">Handcrafted in Viet Nam since 1650</p>
-//           <button className="bg-white text-[#8d7b6f] px-6 py-2 font-semibold hover:bg-gray-100 transition">
-//             SHOP NOW
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
 import React from "react";
 import image from "../../assets/homepageImage.png";
 
@@ -39,7 +8,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* Overlay background (optional: dark tint for readability) */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/15"></div>
 
       {/* Left text section */}
       <div className="relative bg-[#826F66] gap-3 z-10 h-[90vh] flex flex-col justify-center items-center w-full md:w-1/3 lg:w-2/7 ml-10 md:ml-40 text-white space-y-6">

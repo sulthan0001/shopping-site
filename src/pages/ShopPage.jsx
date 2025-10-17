@@ -1,7 +1,14 @@
 import React from "react";
+import GardenSet from "../components/ShopLayout/GardenSet";
+import BlogPage from "../components/ShopLayout/BlogPage";
 
 const ShopPage = () => {
-  return <div>ShopPage</div>;
+  return (
+    <>
+      <GardenSet />
+      <BlogPage />
+    </>
+  );
 };
 
 export default ShopPage;
