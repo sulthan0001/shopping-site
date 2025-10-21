@@ -11,76 +11,82 @@ import product8 from "../../assets/luanabowl.png";
 const bestSellersData = [
   {
     id: 1,
-    name: "Small Ecru Ceramic Compote",
+    name: "Ecru Gray Compote Bowl",
     price: "$40.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "Elegant and understated, this small compote bowl enhances your dining setup with subtle beauty and timeless appeal.",
     image: product1,
   },
   {
     id: 2,
-    name: "Warwick White Vase 14",
+    name: "Warwick Speckled Vase 14cm",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse boiler adipiscing elit tortor eu.",
+      "A handcrafted white vase with soft natural speckles, perfect for adding artisanal charm to your tabletop or shelf.",
     image: product2,
   },
   {
     id: 3,
-    name: "Porcelain Dinner Plate",
+    name: "Blush Porcelain Dessert Plate",
     price: "$48.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "Minimal yet eye-catching — this pink glazed plate pairs perfectly with modern dinnerware  beautiful collections.",
     image: product3,
   },
   {
     id: 4,
-    name: "Warwick White Vase 20",
+    name: "Warwick White Vase 20cm",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse boiler adipiscing elit tortor eu.",
+      "Smooth and tall, this elegant ceramic vase makes a refined statement on its own or when paired with fresh florals design.",
     image: product4,
   },
   {
     id: 5,
-    name: "Rounded Dual Handled Vase",
+    name: "Rounded Dual-Handled Vase",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse boiler adipiscing elit tortor eu.",
+      "With its classic shape and soft matte finish, this handcrafted vase embodies timeless design and artisan craftsmanship.",
     image: product5,
   },
   {
     id: 6,
-    name: "Marin White Dinner Plate",
+    name: "Marin Blue Dinner Plate",
     price: "$48.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "Crafted with a soft blue glaze, this plate brings a touch of coastal calm to any dining setting. Perfect for everyday meals or elegant gatherings.",
     image: product6,
   },
   {
     id: 7,
     name: "Tall Cream Ceramic Vase",
     price: "$48.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "A minimalist vase with a ribbed texture, ideal for showcasing dried florals or fresh blooms. A timeless accent for any interior.",
     image: product7,
   },
   {
     id: 8,
-    name: "Luana Bowl",
+    name: "Luana White Bowl",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse boiler adipiscing elit tortor eu.",
+      "Sleek and versatile, this handcrafted bowl offers modern simplicity — perfect for serving salads, soups, or side dishes.",
     image: product8,
   },
   {
     id: 9,
-    name: "Small Ecru Ceramic Compote",
+    name: "Ecru Gray Compote Bowl",
     price: "$40.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "A soft gray ceramic compote that combines simplicity with sophistication. Perfect for desserts, fruits, or decor.",
     image: product1,
   },
   {
     id: 10,
-    name: "Porcelain Dinner Plate",
+    name: "Blush Porcelain Dessert Plate",
     price: "$48.00",
-    description: "Lorem ipsum dolor sit amet conse boiler adipiscing elit.",
+    description:
+      "Hand-glazed in a delicate blush tone with subtle gold speckles — a chic accent for special occasions or daily indulgence.",
     image: product3,
   },
 ];
@@ -109,7 +115,7 @@ const BestSellers = () => {
             <p className="text-gray-800 font-semibold mb-1">{item.price}</p>
             <p className="text-gray-500 text-sm mb-4">{item.description}</p>
             <button
-              className="border border-gray-800 rounded text-gray-800 px-6 py-2 text-sm font-semibold 
+              className="border border-gray-800 cursor-pointer rounded text-gray-800 px-6 py-2 text-sm font-semibold 
               hover:bg-gray-800 hover:text-white transition-all duration-300"
             >
               ADD TO CART

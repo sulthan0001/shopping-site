@@ -65,11 +65,9 @@ const OurTeam = () => {
         </div>
       </div>
       <div className=" flex flex-col justify-center items-center text-cewnter space-y-6">
-        <p className="text-sm text-gray-600 font-medium">
-          Sign up for shopping
-        </p>
+        <p className="text-sm text-gray-600 font-medium">Join Our Community</p>
         <h1 className="text-2xl sm:text-2xl font-semibold text-gray-800 tracking-wide uppercase">
-          For News, Collections & More
+          Get the Latest Designs & Style Tips
         </h1>
         <div className="space-y-4 flex flex-col items-center">
           <input
@@ -77,7 +75,7 @@ const OurTeam = () => {
             placeholder="Enter your email address"
             className="w-75 border-b border-gray-400 focus:outline-none py-2 text-center placeholder-gray-500"
           />
-          <button className="mt-4 px-6 py-2 border rounded border-gray-800 text-gray-800 font-medium uppercase tracking-wide hover:bg-gray-100 transition">
+          <button className="mt-4 px-6 py-2 border cursor-pointer rounded border-gray-800 text-gray-800 font-medium uppercase tracking-wide hover:bg-gray-100 transition">
             Sign Up
           </button>
         </div>

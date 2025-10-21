@@ -27,7 +27,7 @@ const Pagination = ({
         className={`p-2 rounded-md ${
           currentPage === 1
             ? "text-gray-400 cursor-not-allowed"
-            : "text-gray-700 hover:text-black"
+            : "text-gray-700 hover:text-black cursor-pointer"
         }`}
       >
         <ChevronLeft size={18} />
@@ -38,7 +38,7 @@ const Pagination = ({
         <button
           key={page}
           onClick={() => onPageChange(page)}
-          className={`px-3 py-1 rounded-md transition-all duration-150 ${
+          className={`px-3 py-1 rounded-md transition-all cursor-pointer duration-150 ${
             currentPage === page
               ? "border border-gray-800 text-white bg-gray-900 font-medium"
               : "text-gray-600 hover:text-gray-900"
@@ -55,7 +55,7 @@ const Pagination = ({
         className={`p-2 rounded-md ${
           currentPage === totalPages
             ? "text-gray-400 cursor-not-allowed"
-            : "text-gray-700 hover:text-black"
+            : "text-gray-700 hover:text-black cursor-pointer"
         }`}
       >
         <ChevronRight size={18} />

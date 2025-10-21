@@ -13,6 +13,9 @@ const BlogCard = ({ post }) => {
       </div>
       <h3 className="font-semibold text-lg mb-2">{post.title}</h3>
       <p className="text-gray-600 text-sm">{post.excerpt}</p>
+      {post.category && (
+        <span className="text-xs text-gray-400 uppercase">{post.category}</span>
+      )}
     </div>
   );
 };

@@ -16,7 +16,8 @@ const BlogPage = () => {
 
     if (selectedCategory !== "All") {
       results = results.filter(
-        (post) => post.category.toLowerCase() === selectedCategory.toLowerCase()
+        (post) =>
+          post.category?.toLowerCase() === selectedCategory.toLowerCase()
       );
     }
 

@@ -67,8 +67,8 @@ const Cards = () => {
             UP TO 40% OFF OUR <br /> CHRISTMAS COLLECTION
           </p>
           <p className="text-gray-500 text-base mb-6 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
+            Timeless craftsmanship meets festive elegance. Elevate your dining
+            experience this Christmas.
           </p>
           <button
             className="mx-auto relative text-sm font-semibold tracking-wide pb-0.5
@@ -76,7 +76,7 @@ const Cards = () => {
             transition-all duration-300 ease-in-out
             border border-transparent rounded-md
             hover:bg-blue-500 hover:text-white hover:shadow-md hover:scale-105
-            group"
+            group cursor-pointer"
           >
             Shop Now
             <span

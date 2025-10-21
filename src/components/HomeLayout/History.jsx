@@ -9,11 +9,13 @@ const History = () => {
         {/* Left Text Block */}
         <div className="flex flex-col justify-center items-center text-center bg-[#F7F6F5] p-8 h-full md:h-[300px]">
           <h2 className="text-lg font-semibold tracking-wide uppercase mb-2">
-            Made in Viet Nam Since 1450
+            Handcrafted in Vietnam Since 1650
           </h2>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
+            For over three centuries, the artisans of Bat Trang have shaped clay
+            into timeless creations. Each piece is hand-thrown, painted, and
+            glazed with care — preserving a tradition passed down through
+            generations.
           </p>
           <button className="text-xs font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
             LEARN MORE
@@ -24,7 +26,7 @@ const History = () => {
         <div className="h-[300px]">
           <img
             src={History2}
-            alt="Pottery Work"
+            alt="Vietnamese Artisan Crafting Pottery"
             className="w-full h-full object-cover"
           />
         </div>
@@ -33,7 +35,7 @@ const History = () => {
         <div className="h-[300px]">
           <img
             src={History1}
-            alt="Pottery Making"
+            alt="Traditional Pottery Studio"
             className="w-full h-full object-cover"
           />
         </div>
@@ -41,11 +43,12 @@ const History = () => {
         {/* Right Text Block */}
         <div className="flex flex-col justify-center items-center text-center bg-[#F7F6F5] p-8 h-full md:h-[300px]">
           <h2 className="text-lg font-semibold tracking-wide uppercase mb-2">
-            Our History
+            Our Heritage of Craft
           </h2>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
+            Every bowl, vase, and dinner plate tells a story of patience and
+            artistry. Inspired by nature and tradition, our craftsmen blend
+            modern design with age-old techniques to create pieces that endure.
           </p>
           <button className="text-xs font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
             LEARN MORE

@@ -1,11 +1,19 @@
 import { useState, useRef, useEffect } from "react";
 import { Search, User, Heart, ShoppingBag } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { GiFalconMoon } from "react-icons/gi";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleContact = () => {
+    navigate("/contact");
+  };
+  const handleHome = () => {
+    navigate("/");
+  };
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Shop", path: "/shop" },
+    { name: "Blogs", path: "/blog" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -25,15 +33,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full bg-white shadow-sm">
-      <div className="container mx-auto flex items-center justify-between py-6 px-15">
+    <nav className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
+      <div className="container cursor-pointer mx-auto flex items-center justify-between py-4 px-15">
         {/* Logo Section */}
-        <div className="flex items-center space-x-2">
-          <img
-            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-            alt="Logo"
-            className="h-8 w-8"
-          />
+        <div className="flex items-center space-x-2" onClick={handleHome}>
+          <GiFalconMoon className="h-8 w-8" />
           <span className="text-xl font-semibold tracking-wide">MOON.</span>
         </div>
 
@@ -87,13 +91,13 @@ const Navbar = () => {
           </div>
 
           {/* Other Icons */}
-          <button className="text-gray-700 hover:text-gray-900">
+          <button
+            className="text-gray-700 cursor-pointer hover:text-gray-900"
+            onClick={handleContact}
+          >
             <User size={20} />
           </button>
-          <button className="text-gray-700 hover:text-gray-900">
-            <Heart size={20} />
-          </button>
-          <button className="text-gray-700 hover:text-gray-900">
+          <button className="text-gray-700 cursor-pointer hover:text-gray-900">
             <ShoppingBag size={20} />
           </button>
         </div>

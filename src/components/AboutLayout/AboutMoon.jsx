@@ -10,8 +10,9 @@ const AboutMoon = () => {
           ABOUT MOON
         </h1>
         <p className="text-sm text-gray-500 text-center font-medium">
-          Moon's handmade ceramic products have been around <br /> since 1650,
-          let's explore our journey
+          Moon's handmade ceramic products have been crafted for generations.{" "}
+          <br />
+          Discover our journey through the decades.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-20 pb-5">
@@ -21,10 +22,11 @@ const AboutMoon = () => {
             1910
           </p>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
+            Moon began its journey as a small pottery workshop. Our artisans
+            focused on handcrafting durable ceramic tableware with traditional
+            techniques.
           </p>
-          <button className="text-xs font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
+          <button className="text-xs font-semibold cursor-pointer tracking-wide text-gray-800 hover:text-blue-500 transition-all">
             LEARN MORE
           </button>
         </div>
@@ -33,7 +35,7 @@ const AboutMoon = () => {
         <div className="h-[400px]">
           <img
             src={History2}
-            alt="Pottery Work"
+            alt="Early Pottery Work"
             className="w-full h-full object-cover"
           />
         </div>
@@ -42,7 +44,7 @@ const AboutMoon = () => {
         <div className="h-[400px]">
           <img
             src={History1}
-            alt="Pottery Making"
+            alt="Decorative Ceramic Collection"
             className="w-full h-full object-cover"
           />
         </div>
@@ -53,11 +55,11 @@ const AboutMoon = () => {
             1990
           </p>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed max-w-md">
-            Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.
-            dolor sit amet consectetur adipiscing eli mattis sit phasellus
-            mollis sit aliquam sit
+            By the 1990s, Moon had expanded into decorative ceramics. We
+            introduced artistic designs and limited edition collections that
+            combined modern aesthetics with traditional craftsmanship.
           </p>
-          <button className="text-xs font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
+          <button className="text-xs cursor-pointer font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
             LEARN MORE
           </button>
         </div>
@@ -66,8 +68,9 @@ const AboutMoon = () => {
             2010
           </h2>
           <p className="text-gray-600 text-sm mb-4 leading-relaxed max-w-md">
-            Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque
-            tempus. sit aliquam sit nullam neque ultrices.
+            In 2010, Moon embraced innovation with contemporary ceramic designs.
+            Our products reached global markets, blending heritage with modern
+            trends.
           </p>
           <button className="text-xs font-semibold tracking-wide text-gray-800 hover:text-blue-500 transition-all">
             LEARN MORE
@@ -78,7 +81,7 @@ const AboutMoon = () => {
         <div className="h-[400px]">
           <img
             src={History3}
-            alt="Pottery Work"
+            alt="Modern Ceramic Design"
             className="w-full h-full object-cover"
           />
         </div>

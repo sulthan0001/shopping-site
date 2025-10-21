@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Maps from "../../assets/maps.png";
 
 // Validation Schema
 const schema = yup.object().shape({
@@ -27,38 +26,42 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     console.log("Form Submitted:", data);
-    alert("Message sent successfully!");
+    alert(
+      "Your message has been sent successfully! We will get back to you soon."
+    );
     reset();
   };
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center py-12">
-      <div className="max-w-3xl w-full text-center mb-10">
+      {/* Header */}
+      <div className="max-w-3xl w-full text-center mb-10 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
-          GET IN TOUCH WITH US
+          GET IN TOUCH WITH MOON CERAMICS
         </h2>
         <p className="text-gray-500 mt-2">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit
-          phasellus mollis sit aliquam sit nullam.
+          Have questions, feedback, or collaboration ideas? <br />
+          Fill out the form below or reach us directly via phone or email.
         </p>
 
+        {/* Contact Info */}
         <div className="mt-6 text-sm text-gray-700 space-y-4">
           <div className="flex flex-col justify-center items-center">
-            <p className="font-bold text-base">Office Hours :</p>
+            <p className="font-bold text-base">Office Hours:</p>
             <p className="text-[#C69B7B] text-base">
-              Monday - Friday 8:00 am to 5:00 pm
+              Monday - Friday, 8:00 am to 5:00 pm
             </p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <p className="font-bold text-base">Email:</p>
-            <p className="text-[#C69B7B] text-base">contact@moon.com</p>
+            <p className="text-[#C69B7B] text-base">contact@moonceramics.com</p>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <p className="font-bold text-base">Phone :</p>
-            <p className="text-[#C69B7B] text-base">+91 9392892792</p>
+            <p className="font-bold text-base">Phone:</p>
+            <p className="text-[#C69B7B] text-base">+91 93928 92792</p>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <p className="font-bold text-base">Location :</p>
+            <p className="font-bold text-base">Location:</p>
             <p className="text-[#C69B7B] text-base">
               Sanjeeva Reddy Nagar, Hyderabad, Telangana, India
             </p>
@@ -66,9 +69,10 @@ const ContactForm = () => {
         </div>
       </div>
 
+      {/* Form */}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full max-w-3xl p-6 md:p-8 space-y-4"
+        className="w-full max-w-3xl p-6 md:p-8 space-y-4 bg-white rounded-lg shadow-md"
       >
         <div className="grid md:grid-cols-2 gap-4">
           <div>
@@ -78,7 +82,7 @@ const ContactForm = () => {
             <input
               {...register("name")}
               type="text"
-              placeholder="Samantha Clarken"
+              placeholder="John Doe"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
             {errors.name && (
@@ -93,7 +97,7 @@ const ContactForm = () => {
             <input
               {...register("email")}
               type="email"
-              placeholder="example@youremail.com"
+              placeholder="you@example.com"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
             {errors.email && (
@@ -112,7 +116,7 @@ const ContactForm = () => {
             <input
               {...register("phone")}
               type="text"
-              placeholder="+91 9392892792"
+              placeholder="+91 93928 92792"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
             {errors.phone && (
@@ -129,7 +133,7 @@ const ContactForm = () => {
             <input
               {...register("company")}
               type="text"
-              placeholder="Moon"
+              placeholder="Your Company Name"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800"
             />
             {errors.company && (
@@ -146,7 +150,7 @@ const ContactForm = () => {
           </label>
           <textarea
             {...register("message")}
-            placeholder="Type your message here..."
+            placeholder="Write your message here..."
             rows="4"
             className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-800"
           ></textarea>
@@ -159,7 +163,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-gray-800 text-white py-3 rounded-md font-medium hover:bg-gray-700 transition-colors"
+          className="w-full bg-gray-800 cursor-pointer text-white py-3 rounded-md font-medium hover:bg-gray-700 transition-colors"
         >
           SEND MESSAGE →
         </button>

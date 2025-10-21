@@ -8,40 +8,42 @@ import product5 from "../../assets/dinnerplate1.png";
 const bestSellersData = [
   {
     id: 1,
-    name: "Porcelain Dinner Plate",
+    name: "Celeste Porcelain Dinner Plate",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.",
+      "A refined porcelain plate with a smooth matte glaze — perfect for elegant everyday dining.",
     image: product1,
   },
   {
     id: 2,
-    name: "Ophelia Matte Natural  Vase",
+    name: "Ophelia Matte Natural Vase",
     price: "$49.00",
-    description: "Lorem ipsum dolor sit amet conse bolli tetur.",
+    description:
+      "Handcrafted with a textured matte finish, this vase brings organic warmth and timeless charm to your space.",
     image: product2,
   },
   {
     id: 3,
-    name: "Porcelain Dinner Plate",
+    name: "Aurora Porcelain Dinner Plate",
     price: "$48.00",
     description:
-      "Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.",
+      "Minimalist and modern, this softly glazed plate adds a touch of sophistication to any dining.",
     image: product3,
   },
   {
     id: 4,
-    name: "Luana Bowl",
+    name: "Luana Ceramic Bowl",
     price: "$49.00",
-    description: "Lorem ipsum dolor sit amet conse adipiscing elit tortor",
+    description:
+      "A versatile handcrafted bowl with a natural glaze finish — ideal for salads, soups, or simple home décor.",
     image: product4,
   },
   {
     id: 5,
-    name: "Rounded Dual Handled Vase",
+    name: "Rounded Dual-Handled Vase",
     price: "$49.00",
     description:
-      "Lorem ipsum dolor sit amet conse boiler adipiscing elit tortor eu.",
+      "Classic yet contemporary, this sculpted vase features a rounded body and twin handles — a true artisan statement.",
     image: product5,
   },
 ];
@@ -62,7 +64,7 @@ const NewArrivals = () => {
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-64 object-cover mb-4"
+              className="w-full h-64 rounded object-cover mb-4"
             />
             <h3 className="text-sm font-semibold uppercase mb-1">
               {item.name}

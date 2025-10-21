@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../assets/homepageImage.png";
+import { GiFalconMoon } from "react-icons/gi";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <div className="relative bg-[#826F66] gap-3 z-10 h-[90vh] flex flex-col justify-center items-center w-full md:w-1/3 lg:w-2/7 ml-10 md:ml-40 text-white space-y-6">
         {/* Icon */}
         <div className="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center">
-          <span className="text-2xl font-bold">◎</span>
+          <GiFalconMoon className="w-8 h-8" />
         </div>
 
         {/* Text Content */}
@@ -28,7 +29,7 @@ const Home = () => {
         </div>
 
         {/* Button */}
-        <button className="bg-white w-50 rounded text-[#8d7b6f] px-6 py-2 font-semibold hover:bg-gray-100 transition">
+        <button className="bg-white w-50 cursor-pointer rounded text-[#8d7b6f] px-6 py-2 font-semibold hover:bg-gray-100 transition">
           SHOP NOW
         </button>
       </div>

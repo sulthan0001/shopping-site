@@ -2,23 +2,38 @@ import React from "react";
 
 const Sidebar = ({ onCategorySelect, selectedCategory }) => {
   const categories = [
-    { name: "All", count: 20 },
-    { name: "Drinkware", count: 3 },
-    { name: "Decor", count: 5 },
-    { name: "Furniture", count: 7 },
-    { name: "Office sets", count: 2 },
-    { name: "Kitchen", count: 3 },
+    { name: "All", count: 10 },
+    { name: "Decor", count: 3 },
+    { name: "Furniture", count: 2 },
+    { name: "Kitchen", count: 2 },
     { name: "Food", count: 2 },
   ];
+
+  const popularPosts = [
+    "How Can I Use Ceramic When I Decorate?",
+    "The Secrets to a Living Room Set",
+    "Chocolate Clementine Cake Recipe",
+  ];
+
+  const tags = [
+    "Ceramic",
+    "Kitchen",
+    "Furniture",
+    "Decor",
+    "Cake",
+    "Home",
+    "Food",
+  ];
+
   return (
     <aside className="space-y-8">
       {/* Popular Posts */}
       <div>
         <h3 className="font-semibold mb-4 text-gray-800">POPULAR POSTS</h3>
         <ul className="space-y-3 text-sm text-gray-700">
-          <li>What is a Garden set?</li>
-          <li>How Can I Use Ceramic When I Decorate?</li>
-          <li>The Secrets to a Living Room set</li>
+          {popularPosts.map((post) => (
+            <li key={post}>{post}</li>
+          ))}
         </ul>
       </div>
 
@@ -47,15 +62,7 @@ const Sidebar = ({ onCategorySelect, selectedCategory }) => {
       <div>
         <h3 className="font-semibold mb-4 text-gray-800">TAGS POST</h3>
         <div className="flex flex-wrap gap-2">
-          {[
-            "Ceramic",
-            "Kitchen",
-            "Office sets",
-            "Lamp",
-            "Flower",
-            "Plate",
-            "Home",
-          ].map((tag) => (
+          {tags.map((tag) => (
             <span
               key={tag}
               className="border text-xs px-2 py-1 rounded hover:bg-gray-100 cursor-pointer"
